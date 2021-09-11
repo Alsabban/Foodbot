@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 
-from bot import bot
+import bot
 
 app = Flask(__name__)
 
@@ -10,9 +10,9 @@ def hello_world():
     return 'Hello World!'
 
 
-@app.route("/chat", methods=["GET"])
+@app.route("/chat", methods=["POST"])
 def chat():
-    if request.method == "GET":
+    if request.method == "POST":
 
         request_data = request.get_json()
 
@@ -37,6 +37,7 @@ def chat():
             data["status"] = 'failed'
 
             return jsonify(data)
+
 
 
 if __name__ == '__main__':

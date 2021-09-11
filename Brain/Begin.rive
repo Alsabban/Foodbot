@@ -1,22 +1,4 @@
->topic start
-+begin
--Hello! What's your name? {topic=name}
-<topic
+! version = 2.0
 
-
-
->topic name
-+*
--- <set name=<formal>>Nice to meet you, <get name>. How can I help you? {topic=choose}
-<topic
-
-
->topic choose
-+*
--sorry i cannot understand
-
-+(rate|rate a restaurant)
--Which restaurant do you want to rate? {topic=chooseRestaurant}
-
-+(suggest|suggest a restaurant)
--
++ hello bot
+- Hello human.
