@@ -1,29 +1,29 @@
 import mysql.connector as mysql
 import datetime
 
-con=mysql.conect(host="localhost",user="root",password="",db="coursebot")
+con=mysql.connect(host="localhost",user="root",password="",db="test")
 
 
-def  getUser(user):
+# def  getUser(user):
+#
+#     cur =con.cursor(dictionary=True)
+#
+#     qry = "SELECT * FROM `user` WHERE `username`= '{}'".format(user)
+#
+#     cur.execute(qry)
+#
+#     user = cur.fetchone()
+#
+#     return user
 
-    cur =con.cursor(dictionary=True)
 
-    qry = "SELECT * FROM `user` WHERE `username`= '{}'".format(user)
-
-    cur.execute(qry)
-
-    user = cur.fetchone()
-
-    return user
-
-
-def  save(user_id):
+def  save(rest_id, name):
 
     cur = con.cursor(dictionary=True)
 
-    qry = "INSERT INTO `user_attendance` (user_id , date) VALUES(%s,%s)"
+    qry = "INSERT INTO `restaurants` (id , name) VALUES(%s,%s)"
 
-    cur.execute(qry, (user_id, datetime.datetime.now()))
+    cur.execute(qry, (rest_id, name))
 
     con.commit()
 
