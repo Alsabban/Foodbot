@@ -1,4 +1,11 @@
 ! version = 2.0
+>object save python
+from utils import save
+
 
 + hello bot
 - Hello human.
+
++ new restaurant
+-
+
