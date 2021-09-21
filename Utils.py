@@ -1,7 +1,6 @@
 import mysql.connector as mysql
-import datetime
 
-con = mysql.connect(host="localhost" , user="root" , password="" , db="test")
+con = mysql.connect(host="localhost" , user="root" , password="" , db="chatbot")
 
 
 # def  getUser(user):
