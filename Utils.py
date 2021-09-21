@@ -1,20 +1,20 @@
 import mysql.connector as mysql
 import datetime
 
-con=mysql.connect(host="localhost",user="root",password="",db="test")
+con = mysql.connect(host="localhost" , user="root" , password="" , db="test")
 
 
 # def  getUser(user):
-#
-#     cur =con.cursor(dictionary=True)
-#
-#     qry = "SELECT * FROM `user` WHERE `username`= '{}'".format(user)
-#
-#     cur.execute(qry)
-#
-#     user = cur.fetchone()
-#
-#     return user
+
+ #    cur =con.cursor(dictionary=True)
+
+  #   qry = "SELECT * FROM `user` WHERE `username`= '{}'".format(user)
+
+   #  cur.execute(qry)
+
+    # user = cur.fetchone()
+
+     #return user
 
 
 def  save(rest_id, name):
