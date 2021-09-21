@@ -1,8 +1,8 @@
-from flask import Flask, request, jsonify, app
+from flask import Flask, request, jsonify
 
 import bot
 
-
+app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return 'Hello World!'

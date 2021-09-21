@@ -1,6 +1,6 @@
 ! version = 2.0
 >object save python
-from utils import save
+ import Utils
 
 
 + hello bot
