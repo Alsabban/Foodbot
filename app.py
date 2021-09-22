@@ -1,12 +1,11 @@
 from flask import Flask, request, jsonify
-
 import bot
+#from flask_cors import CORS
 
 app = Flask(__name__)
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
-
+#CORS(app, resources={r"*": {"origins": "*"}})
+#app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
+#app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route("/chat", methods=["POST"])
 def chat():
